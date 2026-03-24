@@ -210,3 +210,92 @@ if (cities.includes(city)) {
 } else {
     console.log("City not found");
 }
+
+
+// Создание объекта
+let user2 = { 
+    name: "John", 
+    age: 20,
+    isStudent: true, 
+};
+
+console.log(user2);
+
+
+// Доступ к свойствам объекта
+console.log(user2.name);
+console.log(user2.age);
+
+console.log(user2["name"]);
+
+
+// Практическое задание №1
+let book = {
+    title: "JS Guide",
+    author: "Unknown",
+    year: 2023
+};
+console.log(book.title, book.author, book.year);
+book.year = 2024;
+console.log("Updated year:", book.year);
+
+
+// Добавление и удаление свойств
+user2.age = 30;
+user2.name = "Кирилл";
+delete user2.isStudent;
+console.log(user2);
+
+
+// Объект с методами
+let user2 = {
+    name: "Ivan",
+    age: 20,
+    isStudent: true,
+    sayHello: function () {
+        console.log(`Hello, my name is ${name}`);
+    },
+};
+
+user2.sayHello();
+
+
+// Практическое задание №2
+let car = {
+    brand: "Toyota",
+    year: 2020,
+    getInfo: function() {
+        console.log(`Car: ${this.brand}, Year: ${this.year}`);
+    }
+};
+car.getInfo();
+
+
+// Перебор свойств
+for (let key in user2) {
+    console.log(key + ": " + user2[key]);
+}
+
+// 8.9. Практическое задание №3
+let product = {
+    name: "Laptop",
+    price: 1000,
+    stock: 5
+};
+for (let key in product) {
+    console.log(`Product ${key}: ${product[key]}`);
+}
+
+
+// Вложенные объекты и массивы
+let student = {
+    name: "Григорий",
+    skills: ["HTML", "CSS", "JS"],
+    address: {
+        city: "Волжский",
+        street: "Пушкина",
+    },
+};
+
+console.log(student.skills[0]);
+console.log(student.address.city);

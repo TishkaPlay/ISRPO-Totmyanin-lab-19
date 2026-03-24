@@ -74,3 +74,71 @@ for (let i = 1; i <= 4; i++) {
     star += "*";
     console.log(star);
 }
+
+
+// Объявление функции
+function sum(a, b) {
+    return a + b;
+}
+console.log(sum(3, 5));
+
+
+// Практическое задание №1
+function multiply(a, b) {
+    return a * b;
+}
+console.log("Multiply:", multiply(5, 3));
+
+
+// Функция без return
+function sayHello(name) {
+    console.log(`Hello, ${name}`);
+}
+sayHello("Тимофей");
+
+
+// Практическое задание №2
+function printInfo(name, age) {
+    console.log(`Name: ${name}, Age: ${age}`);
+}
+printInfo("Alex", 25);
+
+
+// Значения параметров по умолчанию
+function greet(name = "Guest") {
+    console.log("Hello, " + name);
+}
+greet();
+greet("User");
+
+
+// Практическое задание №3
+function calculateDiscount(price, discount = 10) {
+    return price - (price * discount / 100);
+}
+console.log("Price with default discount:", calculateDiscount(1000));
+console.log("Price with 20% discount:", calculateDiscount(1000, 20));
+
+
+// Функции как значения
+const add = function (a, b) { 
+    return a + b; 
+};
+console.log(add(2, 3));
+
+
+// Стрелочные функции
+function sumFunc(a, b) {
+    return a + b;
+}
+const sumFunc2 = (a, b) => a + b;
+const double = x => x + 2;
+const sumFunc3 = (a, b) => a + b;
+const sayGreeting = () => console.log("Hello");
+const square = x => x * x;
+const calculate = (a, b) => {
+    let result = a + b;
+    return result * 2;
+}
+
+

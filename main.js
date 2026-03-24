@@ -142,3 +142,71 @@ const calculate = (a, b) => {
 }
 
 
+// Создание массива
+let numbersArr = [1, 2, 3, 4, 5];
+console.log(numbersArr);
+
+console.log(numbersArr[0]);
+console.log(numbersArr[1]);
+
+console.log(numbersArr.length)
+
+
+// Практическое задание №1
+let colors = ["Red", "Green", "Blue"];
+console.log("First:", colors[0], "Last:", colors[colors.length - 1]);
+colors[1] = "Yellow";
+console.log("Colors array:", colors);
+
+
+// Добавление и удаление
+numbersArr.push(10);
+console.log(numbersArr);
+
+numbersArr.pop();
+console.log(numbersArr);
+
+
+// Практическое задание №2
+let students = [];
+students.push("Anna");
+students.push("Bob");
+students.push("Charlie");
+students.pop();
+console.log("Students:", students);
+
+
+// Перебор
+let numbers2 = [10, 20, 30];
+for (let i = 0; i < numbers2.length; i++) {
+    console.log(numbers2[i]);
+}
+
+
+// Цикл for...of
+for (let value of numbers2) {
+    console.log(value);
+}
+
+
+// Разные типы данных
+let mixedArray = [1, "text", true, 3.14];
+console.log(mixedArray);
+
+
+// Поиск элемента
+console.log(numbersArr.includes(1));
+console.log(numbersArr.indexOf(2));
+
+console.log(fruits.includes("яблоко"));
+console.log(fruits.includes("манго"));
+
+
+// Практическое задание №4
+let cities = ["Moscow", "Paris", "London"];
+let city = "Paris";
+if (cities.includes(city)) {
+    console.log("index:", cities.indexOf(city));
+} else {
+    console.log("City not found");
+}
